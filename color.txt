@@ -1,0 +1,4 @@
+#F3EFE0 -> whitish
+#434242 -> darkish
+#222222 -> blackish
+#22A39F -> blueish

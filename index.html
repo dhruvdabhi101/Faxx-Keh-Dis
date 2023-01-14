@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faxx Keh Dis</title>
     <link rel="stylesheet" href="styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Coiny&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -27,27 +28,43 @@
           <img src="idea.gif" height="60" width="60" />
           <h1>Faxx Keh Dis</h1>
         </div>
-        <button class="btn btn-large">Share a fact</button>
+        <button class="btn btn-large btn-open">Share a fact</button>
       </header>
 
-      <form action="" class="fact-form">
+      <form class="fact-form">
         <input type="text" name="" id="" placeholder="SHare a fact" />
         <input type="text" placeholder="Source" />
-        <select name="" id="">
+        <select name="" id="category-select">
           <option value="">Select Category</option>
           <option value="tech">tech</option>
           <option value="science">science</option>
           <option value="lifestyel">Lifestyle</option>
         </select>
-        <button class="btn">Post</button>
+        <button class="btn post-btn">Post</button>
       </form>
 
       <main class="main">
         <aside>
           <ul>
-            <li><button class="btn">All</button></li>
-            <li><button class="btn">Tech</button></li>
-            <li><button class="btn">Science</button></li>
+            <li class="category">
+              <button class="btn btn-all-category">All</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #3b82f6"
+              >
+                Tech
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #16a34a"
+              >
+                Science
+              </button>
+            </li>
           </ul>
         </aside>
 
@@ -62,13 +79,13 @@
                   >(source)</a
                 >
               </p>
-              <span class="tag" style="background-color: #3b8286"
-                >#Technology</span
+              <span class="tag" style="background-color: #3b82f6"
+                >Technology</span
               >
               <div class="vote-buttons">
-                <button>👍 <strong>10</strong></button>
-                <button>🤯 <strong>2</strong></button>
-                <button>⛔️ <strong>0</strong></button>
+                <button>👍 24</button>
+                <button>🤯 2</button>
+                <button>⛔️ 0</button>
               </div>
             </li>
             <li class="fact">
@@ -79,9 +96,7 @@
                   >(source)</a
                 >
               </p>
-              <span class="tag" style="background-color: #eab308"
-                >#Society</span
-              >
+              <span class="tag" style="background-color: #eab308">Society</span>
               <div class="vote-buttons">
                 <button>👍<strong>10</strong></button>
                 <button>🤯<strong>2</strong></button>
@@ -92,5 +107,6 @@
         </section>
       </main>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
